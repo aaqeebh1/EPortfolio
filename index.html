@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aaqeeb Hussain</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./owlCarousel/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./owlCarousel/assets/owl.theme.default.css">
+
+
+
+
+</head>
+
+<body>
+  <section id="about" ">
+      <nav>
+        <div class=" personal__logo">Aaqeeb Hussain</div>
+    <ul class="nav__link--list">
+      <li class="nav__link">
+        <a href="#languages" class="nav__link--anchor link__hover-effect link__hover-effect--black">Languages</a>
+      </li>
+      <li class="nav__link">
+        <a href="#projects" class="nav__link--anchor link__hover-effect link__hover-effect--black">Projects</a>
+      </li>
+      <li class="nav__link">
+        <a class="nav__link--anchor nav__link--anchor-primary" onclick="toggleModal()">Contact</a>
+      </li>
+      <li>
+        <a>
+          <i class="fa-solid fa-circle-half-stroke dark-mode" onclick="toggleContrast()"></i>
+        </a>
+      </li>
+    </ul>
+    </nav>
+    <div class="flex flex-1">
+      <div class="about-me__info row">
+        <div class="about-me__info--container">
+          <figure class="about-me__picture--mask">
+            <img src="./assets/Photo_1630233386543.jpg" class="about-me__picture" alt="Picture of Me!" />
+          </figure>
+          <h1 class="about-me__info--title">
+            Hello! I'm
+            <span class="text--green">Aaqeeb Hussain</span>
+            <span class="smiley-face">&#128513;</span>
+          </h1>
+          <p class="about-me__info--para">
+            Im a
+            <strong class="text--green">front-end software developer</strong>
+            with a strong enthusiasm for creating user-friendly, fast loading
+            web products that make a positive difference in the world.
+          </p>
+          <div class="about-me__links">
+            <a class="about-me__link" target="_blank" href="https://www.linkedin.com/in/aaqeebhussain/">
+              <i class="click fa-brands fa-linkedin-in"></i>
+            </a>
+            <a class="about-me__link" target="_blank" href="https://github.com/aaqeebh1">
+              <i class="click fa-brands fa-github"></i>
+            </a>
+            <a class="about-me__link" target="_blank" onclick="toggleModal()">
+              <i class="click fa-solid fa-envelope"></i>
+            </a>
+            <a class="about-me__link" target="_blank" href="#">
+              <i class="click fa-solid fa-file-pdf"></i>
+            </a>
+          </div>
+          <div class="mail__btn" target="_blank" onclick="toggleModal()">
+            <i class="click fas fa-envelope"></i>
+          </div>
+          <a href="#projects" class="scroll">
+            <div class="scroll__icon click">
+              <i class="fa-solid fa-computer-mouse-scrollwheel"></i>
+            </div>
+          </a>
+        </div>
+        <figure class="about-me__img--container">
+          <img src="./assets/undraw_software_engineer_re_tnjc.svg" class="about-me__img" alt="" />
+        </figure>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal__half modal__about">
+        <h3 class="modal__title modal__title--about">
+          Here's a bit about me.
+        </h3>
+        <h4 class="modal__subtitle modal__subtitle--about">
+          Frontend Software Engineer
+        </h4>
+        <p class="modal__para">
+          I'm a
+          <span class="text--green">frontend software developer</span> with a
+          solid energy for creating sites with incredible client experiences.
+          I as of now work with and gain experience from a group comprising of
+          probably the <span class="text--green"> most skilled </span> and
+          <span class="text--green"> experienced</span> programmers
+          consistently
+        </p>
+        <div class="modal__languages">
+          <figure class="modal__language">
+            <img class="modal__language--img" src="./assets/html.png" alt="" />
+            <span class="modal__language--name">HTML</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="./assets/css3.png" alt="" />
+            <span class="modal__language--name">CSS</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="./assets/javascript.png" alt="" />
+            <span class="modal__language--name">JavaScript</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="./assets/react.png" alt="" />
+            <span class="modal__language--name">React</span>
+          </figure>
+        </div>
+      </div>
+      <div class="modal__half modal__contact">
+        <h3 class="modal__title modal__title--contact">Let's talk!</h3>
+        <h4 class="modal__subtitle modal__subtitle--contact">
+          I'm currently open to new Opportunities
+        </h4>
+        <form id="contact__form" onsubmit="contact(event)">
+          <i class="click fas fa-times modal__exit" onclick="toggleModal()"></i>
+          <div class="form__item">
+            <label class="form__item--label">Name</label>
+            <input type="text" name="user_name" class="input" required />
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Email</label>
+            <input type="email" name="user_email" class="input" required />
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Message</label>
+            <textarea type="text" name="message" class="input" placeholder="Write message here" required></textarea>
+          </div>
+          <button id="contact__submit" class="form__submit">
+            Send it my way
+          </button>
+        </form>
+        <div class="modal__overlay modal__overlay--loading">
+          <i class="click fas fa-spinner"></i>
+        </div>
+        <div class="modal__overlay modal__overlay--success">
+          Thanks for the message! Looking forward to speaking to you soon.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="languages">
+    <div class="container">
+      <div class="row">
+        <h1 class="section__title">
+          My <span class="text--green">technology stack!</span>
+        </h1>
+        <div class="language__list">
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img src="./assets/html.png" alt="" class="language__img" />
+            </figure>
+            <span class="language__name">HTML</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img src="./assets/css3.png" alt="" class="language__img" />
+            </figure>
+            <span class="language__name">CSS</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img src="./assets/javascript.png" alt="" class="language__img" />
+            </figure>
+            <span class="language__name">JavaScript</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img src="./assets/react.png" alt="" class="language__img" />
+            </figure>
+            <span class="language__name">React</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        <h1 class="section__title">
+          Here are some of my <span class="text--green">projects</span>
+        </h1>
+
+        <ul class="project-list">
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/AnimeWorld.JPG" alt="My project image Anime World" class="project__img" />
+              <div class="project__description">
+                <h3 class="project__description--title">AnimeWorld</h3>
+                <h4 class="project__description--sub-title">
+                  HTML, CSS, JavaScript and ReactJS
+                </h4>
+                <p class="project__description--para">
+                  In this project I used JavaScript, HTML, CSS and ReactJS to make a responsive Anime search website. I
+                  used Jikan API to pull data and populate the results, I also used React Router, React Hooks and added
+                  a
+                  loading state.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://github.com/aaqeebh1/anime-website" target="_blank"
+                    class="project__description--link">
+                    <i class="click fa-brands fa-github"></i>
+                  </a>
+                  <a href="https://animeworld-fb434.web.app/" target="_blank" class="project__description--link">
+                    <i class="click fa-solid fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/GmailClone.JPG" alt="My project image" class="project__img" />
+              <div class="project__description">
+                <h3 class="project__description--title">Gmail Clone</h3>
+                <h4 class="project__description--sub-title">
+                  HTML, CSS, JavaScript, ReactJS, Redux and Firebase
+                </h4>
+                <p class="project__description--para">
+                  In this project I made a clone of Gmail, I used firebase firestore for the database, firebase auth
+                  google auth for login. I used Redux for a global store that could be accessed anywhere in the app, I
+                  also used React Router and React Hooks.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://github.com/aaqeebh1/gmail-clone" target="_blank" class="project__description--link">
+                    <i class="click fa-brands fa-github"></i>
+                  </a>
+                  <a href="https://clone-508b5.web.app/" target="_blank" class="project__description--link">
+                    <i class="click fa-solid fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/GoogleClone.JPG" alt="My project image" class="project__img" />
+              <div class="project__description">
+                <h3 class="project__description--title">Google Search Clone</h3>
+                <h4 class="project__description--sub-title">
+                  HTML, CSS, JavaScript, ReactJS and Firebase
+                </h4>
+                <p class="project__description--para">
+                  In this project I cloned Google Search, using Google's search api for a custom search. This project
+                  was deployed on Firebase.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://github.com/aaqeebh1/google-clone-app" target="_blank"
+                    class="project__description--link">
+                    <i class="click fa-brands fa-github"></i>
+                  </a>
+                  <a href="https://clone-4b4c6.web.app" target="_blank" class="project__description--link">
+                    <i class="click fa-solid fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/TwitterClone.JPG" alt="My project image" class="project__img" />
+              <div class="project__description">
+                <h3 class="project__description--title">Twitter Clone</h3>
+                <h4 class="project__description--sub-title">
+                  HTML, CSS, JavaScript, ReactJS and Firebase
+                </h4>
+                <p class="project__description--para">
+                  This is a Twitter clone project, I used firestore for the database to mimic the Twitter feed and I
+                  used the twitter-embed React library to mimic the 'What's Happening' widget.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://github.com/aaqeebh1/twitter-clone" target="_blank"
+                    class="project__description--link">
+                    <i class="click fa-brands fa-github"></i>
+                  </a>
+                  <a href="https://twitter-clone-45770.web.app/" target="_blank" class="project__description--link">
+                    <i class="click fa-solid fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="row footer__row">
+      <a href="#" class="footer_anchor">
+        <figure class="footer__logo">
+          <img src="./assets/222px-UncialA-01.svg.png" class="footer__logo--img" alt="" />
+        </figure>
+        <span class="footer__logo--popper">Top <i class="click fas fa-arrow-up"></i></span>
+      </a>
+      <div class="footer__social--list">
+        <a href="https://github.com/aaqeebh1" class="footer__social--link link__hover-effect link__hover-effect--white"
+          target="_blank">Github</a>
+        <a href="https://www.linkedin.com/in/aaqeebhussain/"
+          class="footer__social--link link__hover-effect link__hover-effect--white" target="_blank">Linkedin</a>
+        <a onclick="toggleModal()" class="footer__social--link link__hover-effect link__hover-effect--white"
+          target="_blank">Email</a>
+        <a href="#" class="footer__social--link link__hover-effect link__hover-effect--white" target="_blank">Resume</a>
+      </div>
+      <div class="footer_copyright">Copyright &copy; 2022 Aaqeeb Hussain</div>
+    </div>
+  </footer>
+
+
+  <script src="https://kit.fontawesome.com/c56b8b2b8b.js" crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+
+</body>
+
+</html>
