@@ -152,14 +152,13 @@ label {
   color: #fff;
 }
 
-
 .dark-mode .scroll__icon,
 .dark-mode .scroll__icon:after {
   border: 2px solid #fff;
 }
 
 .dark-mode section {
-  background-color: #242424;
+  background-color: #111111;
 }
 
 /*Navigation Bar*/
@@ -173,6 +172,11 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 12px;
+}
+
+.nav__logo--img {
+  width: 100px;
+  height: 65px;
 }
 
 .nav__link--list {
@@ -389,6 +393,11 @@ nav {
   visibility: hidden;
   z-index: -1;
   transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
+}
+.disable-scroll {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
 }
 
 .modal__open .modal {
@@ -699,7 +708,7 @@ nav {
 /* Footer */
 
 footer {
-  background-color: #242424;
+  background-color: #111111;
 }
 
 .footer__social--list {
@@ -719,8 +728,9 @@ footer {
 }
 
 .footer__logo--img {
-  width: 70px;
-  height: 58px;
+  width: 135px;
+  height: 100px;
+  margin-bottom: 30px;
 }
 
 .footer__social--link,
@@ -786,8 +796,8 @@ footer {
     width: 100%;
   }
 
-  .shape {
-    opacity: 0;
+  .disable-scroll {
+    overflow: visible;
   }
 }
 
@@ -846,86 +856,7 @@ nav,
   height: 100vh;
 }
 
-/* 
-
-Shapes
-
-shapes on the first row
-height = 15vh
-
-shapes on the second row
-height = 50vh
-
-shapes on the third row
-height = 80vh
-
-shapes on first column
-width = 5vw
-
-shapes on second column
-width = 50vw
-
-shapes on third column
-width = 80vw
-
-
-*/
-
-.shape {
-  z-index: 0;
-  position: fixed;
-  transition: opacity 600ms 800ms, visibility 600ms 800ms;
-}
-
-.modal__open .shape {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 400ms, visibility 400ms;
-}
-
-.shape--0 {
-  top: 15vh;
-  left: 5vw;
-  width: 80px;
-}
-.shape--1 {
-  top: 15vh;
-  left: 50vw;
-  width: 80px;
-}
-.shape--2 {
-  top: 15vh;
-  left: 80vw;
-  width: 80px;
-}
-.shape--3 {
-  top: 50vh;
-  left: 5vw;
-  width: 80px;
-}
-.shape--4 {
-  top: 50vh;
-  left: 50vw;
-
-  width: 80px;
-}
-.shape--5 {
-  top: 50vh;
-  left: 80vw;
-  width: 80px;
-}
-.shape--6 {
-  top: 80vh;
-  left: 5vw;
-  width: 80px;
-}
-.shape--7 {
-  top: 80vh;
-  left: 50vw;
-  width: 80px;
-}
-.shape--8 {
-  top: 80vh;
-  left: 80vw;
-  width: 80px;
+.slider {
+  display: flex;
+  position: relative;
 }

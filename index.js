@@ -38,9 +38,9 @@ function contact(event) {
 function toggleModal() {
   if (isModalOpen) {
     isModalOpen = false;
-    return document.body.classList.remove("modal__open");
+    return document.body.classList.remove("modal__open", "disable-scroll");
   }
   isModalOpen = true;
-  document.body.classList += " modal__open";
+  document.body.classList += " modal__open disable-scroll";
   document.body.scrollTop = document.documentElement.scrollTop = 0;
 }
