@@ -614,7 +614,7 @@ nav {
   bottom: 0;
   transform: scale(0);
   transition: all 300ms ease;
-  opacity: 0;
+  opacity: 0;project__wrapper
 }
 
 .language:hover .language__name {
@@ -643,7 +643,8 @@ nav {
   box-shadow: 0 20px 80px rgba(0, 0, 0, 0.48);
   border-radius: 20px;
   overflow: hidden;
-  position: relative;
+  position: relative;  
+  height: 310px;
 }
 .project__wrapper:before {
   content: "";
@@ -780,6 +781,9 @@ footer {
   .project__description {
     left: 30px;
     padding-right: 30px;
+  }
+  .project__wrapper {
+    height: auto;
   }
 
   .modal {
