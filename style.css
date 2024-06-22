@@ -98,7 +98,7 @@ a {
   color: #0b6f0b;
 }
 
-section:nth-child(even) {
+#languages {
   background-color: #f8f8f8;
 }
 
@@ -164,19 +164,32 @@ label {
 .dark-mode section {
   background-color: #111111;
 }
+.dark-mode #languages {
+  background-color: #242424de;
+}
+.dark-mode nav {
+  background-color: #404040;
+}
+
+.dark-mode .project__wrapper {
+  box-shadow: 0px 0px 19px 5px rgba(45, 255, 196, 0.65);
+}
+
+.dark-mode .language__img:hover {
+ filter: drop-shadow(0px 0px 19px  #2dffc4);
+}
 
 /*Navigation Bar*/
 
 nav {
   height: 100px;
   width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px;
-
+  padding: 12px 200px;
+  background-color: #f8f8f8;
+  overflow: visible;
 }
 
 .nav__logo--img {
@@ -239,6 +252,7 @@ nav {
   width: 200px;
   height: auto;
   overflow: hidden;
+  margin-top: 32px;
   animation: animate-profile-picture 800ms 200ms backwards;
 }
 
@@ -314,7 +328,8 @@ nav {
 
 .smiley-face {
   display: inline-block;
-  animation: animate-wave 500ms infinite ease-in-out;
+  animation: animate-wave 700ms infinite  ease-in-out;
+  animation-iteration-count: 6;
 }
 
 @keyframes animate-wave {
@@ -322,7 +337,7 @@ nav {
     transform: rotate(0);
   }
   50% {
-    transform: rotate(30deg);
+    transform: rotate(40deg);
   }
   100% {
     transform: rotate(0);
@@ -345,6 +360,25 @@ nav {
   right: 40px;
   z-index: 100;
 }
+.footer__logo--popper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 42px;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: #242424; 
+  color: #fff; 
+  position: fixed;
+  bottom: 100px;
+  right: 40px;
+  z-index: 100;
+   transition: all 300ms ease;
+}
+
 
 .scroll {
   position: absolute;
@@ -584,7 +618,7 @@ nav {
   transition: all 300ms ease;
 }
 
-.language:hover .language__img {
+.language__img:hover {
   filter: brightness(80%);
   opacity: 0.85;
   transform: scale(0.9);
@@ -743,7 +777,7 @@ footer {
 .footer__copyright {
   color: #fff;
 }
-.footer__logo--popper {
+/* .footer__logo--popper {
   position: absolute;
   right: 0;
   color: #fff;
@@ -751,17 +785,17 @@ footer {
   font-weight: 700;
   opacity: 0;
   transition: all 300ms ease;
-}
+} */
 
 .footer_anchor {
   margin-bottom: 20px;
   position: relative;
 }
 
-.footer_anchor:hover .footer__logo--popper {
+/* .footer_anchor:hover .footer__logo--popper {
   transform: translatex(60px);
   opacity: 1;
-}
+} */
 /* smallphones, tablets and large phones */
 @media (max-width: 768px) {
   nav {
