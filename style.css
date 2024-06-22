@@ -176,7 +176,7 @@ label {
 }
 
 .dark-mode .language__img:hover {
- filter: drop-shadow(0px 0px 19px  #2dffc4);
+  filter: drop-shadow(0px 0px 19px #2dffc4);
 }
 
 /*Navigation Bar*/
@@ -328,7 +328,7 @@ nav {
 
 .smiley-face {
   display: inline-block;
-  animation: animate-wave 700ms infinite  ease-in-out;
+  animation: animate-wave 700ms infinite ease-in-out;
   animation-iteration-count: 6;
 }
 
@@ -360,25 +360,24 @@ nav {
   right: 40px;
   z-index: 100;
 }
-.footer__logo--popper{
+.footer__logo--popper {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 42px;
-  margin: 10px auto;
+  margin: 12px;
   padding: 10px;
   font-size: 10px;
   border-radius: 50%;
   border: none;
-  background-color: #242424; 
-  color: #fff; 
+  background-color: #242424;
+  color: #fff;
   position: fixed;
   bottom: 100px;
   right: 40px;
   z-index: 100;
-   transition: all 300ms ease;
+  transition: all 300ms ease;
 }
-
 
 .scroll {
   position: absolute;
@@ -883,7 +882,8 @@ footer {
 nav,
 .flex,
 #languages,
-#projects {
+#projects,
+.footer__logo--popper {
   opacity: 1;
   visibility: visible;
   transition: opacity 600ms 800ms, visibility 600ms 800ms;
@@ -893,7 +893,8 @@ nav,
 .modal__open .flex,
 .modal__open #languages,
 .modal__open #projects,
-.modal__open footer {
+.modal__open footer,
+.modal__open .footer__logo--popper {
   opacity: 0;
   visibility: hidden;
   transition: opacity 400ms, visibility 400ms;
