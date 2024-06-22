@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aaqeeb Hussain</title>
   <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="/glide.core.min.css">
+  <link rel="stylesheet" href="/glide.theme.min.css">
 
 
 
@@ -38,7 +40,7 @@
       <div class="about-me__info row">
         <div class="about-me__info--container">
           <figure class="about-me__picture--mask">
-            <img src="./assets/Photo_1630233386543.jpg" class="about-me__picture" alt="Picture of Me!" />
+            <img src="./assets/portrate-removebg-preview.png" class="about-me__picture" alt="Picture of Me!" />
           </figure>
           <h1 class="about-me__info--title">
             Hello! I'm
@@ -189,107 +191,119 @@
         <h1 class="section__title">
           Here are some of my <span class="text--green">projects</span>
         </h1>
-
-        <ul class="project-list">
-          <li class="project">
-            <div class="project__wrapper">
-              <img src="./assets/AnimeWorld.JPG" alt="My project image Anime World" class="project__img" />
-              <div class="project__description">
-                <h3 class="project__description--title">AnimeWorld</h3>
-                <h4 class="project__description--sub-title">
-                  HTML, CSS, JavaScript and ReactJS
-                </h4>
-                <p class="project__description--para">
-                  In this project I used JavaScript, HTML, CSS and ReactJS to make a responsive Anime search website. I
-                  used Jikan API to pull data and populate the results, I also used React Router, React Hooks and added
-                  a
-                  loading state.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://github.com/aaqeebh1/anime-website" target="_blank"
-                    class="project__description--link">
-                    <i class="click fa-brands fa-github"></i>
-                  </a>
-                  <a href="https://animeworld-fb434.web.app/" target="_blank" class="project__description--link">
-                    <i class="click fa-solid fa-link"></i>
-                  </a>
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="project glide__slide">
+                <div class="project__wrapper">
+                  <img src="./assets/AnimeWorld.JPG" alt="My project image Anime World" class="project__img" />
+                  <div class="project__description">
+                    <h3 class="project__description--title">AnimeWorld</h3>
+                    <h4 class="project__description--sub-title">
+                      HTML, CSS, JavaScript and ReactJS
+                    </h4>
+                    <p class="project__description--para">
+                      In this project I used JavaScript, HTML, CSS and ReactJS to make a responsive Anime search
+                      website. I
+                      used Jikan API to pull data and populate the results, I also used React Router, React Hooks and
+                      added
+                      a
+                      loading state.
+                    </p>
+                    <div class="project__description--links">
+                      <a href="https://github.com/aaqeebh1/anime-website" target="_blank"
+                        class="project__description--link">
+                        <i class="click fa-brands fa-github"></i>
+                      </a>
+                      <a href="https://animeworld-fb434.web.app/" target="_blank" class="project__description--link">
+                        <i class="click fa-solid fa-link"></i>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </li>
-          <li class="project">
-            <div class="project__wrapper">
-              <img src="./assets/GmailClone.JPG" alt="My project image" class="project__img" />
-              <div class="project__description">
-                <h3 class="project__description--title">Gmail Clone</h3>
-                <h4 class="project__description--sub-title">
-                  HTML, CSS, JavaScript, ReactJS, Redux and Firebase
-                </h4>
-                <p class="project__description--para">
-                  In this project I made a clone of Gmail, I used firebase firestore for the database, firebase auth
-                  google auth for login. I used Redux for a global store that could be accessed anywhere in the app, I
-                  also used React Router and React Hooks.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://github.com/aaqeebh1/gmail-clone" target="_blank" class="project__description--link">
-                    <i class="click fa-brands fa-github"></i>
-                  </a>
-                  <a href="https://clone-508b5.web.app/" target="_blank" class="project__description--link">
-                    <i class="click fa-solid fa-link"></i>
-                  </a>
+              </li>
+              <li class="project glide__slide">
+                <div class="project__wrapper">
+                  <img src="./assets/GmailClone.JPG" alt="My project image" class="project__img" />
+                  <div class="project__description">
+                    <h3 class="project__description--title">Gmail Clone</h3>
+                    <h4 class="project__description--sub-title">
+                      HTML, CSS, JavaScript, ReactJS, Redux and Firebase
+                    </h4>
+                    <p class="project__description--para">
+                      In this project I made a clone of Gmail, I used firebase firestore for the database, firebase auth
+                      google auth for login. I used Redux for a global store that could be accessed anywhere in the app,
+                      I
+                      also used React Router and React Hooks.
+                    </p>
+                    <div class="project__description--links">
+                      <a href="https://github.com/aaqeebh1/gmail-clone" target="_blank"
+                        class="project__description--link">
+                        <i class="click fa-brands fa-github"></i>
+                      </a>
+                      <a href="https://clone-508b5.web.app/" target="_blank" class="project__description--link">
+                        <i class="click fa-solid fa-link"></i>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </li>
-          <li class="project">
-            <div class="project__wrapper">
-              <img src="./assets/GoogleClone.JPG" alt="My project image" class="project__img" />
-              <div class="project__description">
-                <h3 class="project__description--title">Google Search Clone</h3>
-                <h4 class="project__description--sub-title">
-                  HTML, CSS, JavaScript, ReactJS and Firebase
-                </h4>
-                <p class="project__description--para">
-                  In this project I cloned Google Search, using Google's search api for a custom search. This project
-                  was deployed on Firebase.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://github.com/aaqeebh1/google-clone-app" target="_blank"
-                    class="project__description--link">
-                    <i class="click fa-brands fa-github"></i>
-                  </a>
-                  <a href="https://clone-4b4c6.web.app" target="_blank" class="project__description--link">
-                    <i class="click fa-solid fa-link"></i>
-                  </a>
+              </li>
+              <li class="project glide__slide">
+                <div class="project__wrapper">
+                  <img src="./assets/GoogleClone.JPG" alt="My project image" class="project__img" />
+                  <div class="project__description">
+                    <h3 class="project__description--title">Google Search Clone</h3>
+                    <h4 class="project__description--sub-title">
+                      HTML, CSS, JavaScript, ReactJS and Firebase
+                    </h4>
+                    <p class="project__description--para">
+                      In this project I cloned Google Search, using Google's search api for a custom search. This
+                      project
+                      was deployed on Firebase.
+                    </p>
+                    <div class="project__description--links">
+                      <a href="https://github.com/aaqeebh1/google-clone-app" target="_blank"
+                        class="project__description--link">
+                        <i class="click fa-brands fa-github"></i>
+                      </a>
+                      <a href="https://clone-4b4c6.web.app" target="_blank" class="project__description--link">
+                        <i class="click fa-solid fa-link"></i>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </li>
-          <li class="project">
-            <div class="project__wrapper">
-              <img src="./assets/TwitterClone.JPG" alt="My project image" class="project__img" />
-              <div class="project__description">
-                <h3 class="project__description--title">Twitter Clone</h3>
-                <h4 class="project__description--sub-title">
-                  HTML, CSS, JavaScript, ReactJS and Firebase
-                </h4>
-                <p class="project__description--para">
-                  This is a Twitter clone project, I used firestore for the database to mimic the Twitter feed and I
-                  used the twitter-embed React library to mimic the 'What's Happening' widget.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://github.com/aaqeebh1/twitter-clone" target="_blank"
-                    class="project__description--link">
-                    <i class="click fa-brands fa-github"></i>
-                  </a>
-                  <a href="https://twitter-clone-45770.web.app/" target="_blank" class="project__description--link">
-                    <i class="click fa-solid fa-link"></i>
-                  </a>
+              </li>
+              <li class="project glide__slide">
+                <div class="project__wrapper">
+                  <img src="./assets/TwitterClone.JPG" alt="My project image" class="project__img" />
+                  <div class="project__description">
+                    <h3 class="project__description--title">Twitter Clone</h3>
+                    <h4 class="project__description--sub-title">
+                      HTML, CSS, JavaScript, ReactJS and Firebase
+                    </h4>
+                    <p class="project__description--para">
+                      This is a Twitter clone project, I used firestore for the database to mimic the Twitter feed and I
+                      used the twitter-embed React library to mimic the 'What's Happening' widget.
+                    </p>
+                    <div class="project__description--links">
+                      <a href="https://github.com/aaqeebh1/twitter-clone" target="_blank"
+                        class="project__description--link">
+                        <i class="click fa-brands fa-github"></i>
+                      </a>
+                      <a href="https://twitter-clone-45770.web.app/" target="_blank" class="project__description--link">
+                        <i class="click fa-solid fa-link"></i>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </li>
-        </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">Prev</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">Next</button>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -308,7 +322,8 @@
           class="footer__social--link link__hover-effect link__hover-effect--white" target="_blank">Linkedin</a>
         <a onclick="toggleModal()" class="footer__social--link link__hover-effect link__hover-effect--white"
           target="_blank">Email</a>
-        <a href="/assets/AaqeebHussainCV.pdf" class="footer__social--link link__hover-effect link__hover-effect--white" target="_blank">Resume</a>
+        <a href="/assets/AaqeebHussainCV.pdf" class="footer__social--link link__hover-effect link__hover-effect--white"
+          target="_blank">Resume</a>
       </div>
       <div class="footer__copyright">Copyright &copy; 2022 Aaqeeb Hussain</div>
     </div>
@@ -318,6 +333,14 @@
   <script src="https://kit.fontawesome.com/c56b8b2b8b.js" crossorigin="anonymous"></script>
   <script src="./index.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script>
+    const config = {
+      type: 'carousel',
+      perView: 1,
+    }
+    new Glide('.glide', config).mount()
   </script>
 
 </body>

@@ -92,6 +92,7 @@ a {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 24px;
+  overflow: visible;
 }
 .text--green {
   color: #0b6f0b;
@@ -148,12 +149,15 @@ label {
 .dark-mode .language__name,
 .dark-mode .about-me__info--title,
 .dark-mode .about-me__info--para,
-.dark-mode .section__title {
+.dark-mode .section__title,
+.dark-mode .glide__arrow {
   color: #fff;
 }
 
 .dark-mode .scroll__icon,
-.dark-mode .scroll__icon:after {
+.dark-mode .scroll__icon:after,
+.dark-mode .glide__arrow,
+.dark-mode .glide__arrow:hover {
   border: 2px solid #fff;
 }
 
@@ -166,12 +170,13 @@ label {
 nav {
   height: 100px;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px;
+
 }
 
 .nav__logo--img {
@@ -231,12 +236,9 @@ nav {
 }
 
 .about-me__picture--mask {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  width: 200px;
+  height: auto;
   overflow: hidden;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
-  margin-bottom: 28px;
   animation: animate-profile-picture 800ms 200ms backwards;
 }
 
@@ -625,7 +627,9 @@ nav {
 /* Project sections */
 
 .project {
+  margin-top: 135px;
   margin-bottom: 135px;
+  overflow: visible;
 }
 .project:last-child {
   margin-bottom: 40px;
@@ -640,10 +644,10 @@ nav {
   max-width: 600px;
   display: flex;
   margin: 0 auto;
-  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.48);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.48);
   border-radius: 20px;
   overflow: hidden;
-  position: relative;  
+  position: relative;
   height: 310px;
 }
 .project__wrapper:before {
@@ -710,6 +714,7 @@ nav {
 
 footer {
   background-color: #111111;
+  height: auto;
 }
 
 .footer__social--list {
@@ -725,7 +730,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 8% 0;
+  padding: 35px 0;
 }
 
 .footer__logo--img {
@@ -783,7 +788,7 @@ footer {
     padding-right: 30px;
   }
   .project__wrapper {
-    height: auto;
+    height: 188px;
   }
 
   .modal {
@@ -808,6 +813,10 @@ footer {
 @media (max-width: 480px) {
   .nav__link:not(:last-child) {
     display: none;
+  }
+
+  .row {
+    overflow: hidden;
   }
 
   .project__description {
