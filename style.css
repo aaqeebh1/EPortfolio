@@ -89,10 +89,10 @@ a {
 }
 .row {
   width: 100%;
-  max-width: 800px;
+  max-width: 90%;
   margin: 0 auto;
   padding: 0 24px;
-  overflow: visible;
+  overflow: hidden;
 }
 .text--green {
   color: #0b6f0b;
@@ -171,12 +171,12 @@ label {
   background-color: #404040;
 }
 
-.dark-mode .project__wrapper {
+.dark-mode .project__wrapper:hover {
   box-shadow: 0px 0px 19px 5px rgba(45, 255, 196, 0.65);
 }
 
 .dark-mode .language__img:hover {
-  filter: drop-shadow(0px 0px 19px #2dffc4);
+  filter: drop-shadow(0px 0px 8px #2dffc4);
 }
 
 /*Navigation Bar*/
@@ -300,9 +300,9 @@ nav {
 }
 
 .about-me__link {
-  font-size: 20px;
+  font-size: 32px;
   color: #242424;
-  padding: 0 16px;
+  padding: 0 32px;
 }
 .about-me__img--container {
   flex: 1;
@@ -313,7 +313,7 @@ nav {
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
-  padding-top: 28px;
+  padding-top: 48px;
   animation: fade-in 1200ms 1000ms backwards;
 }
 
@@ -379,7 +379,7 @@ nav {
   transition: all 300ms ease;
 }
 
-.footer__logo--popper  i {
+.footer__logo--popper i {
   margin: 3px;
 }
 
