@@ -17,24 +17,24 @@
 
 <body>
   <section id="about">
-      <nav id="nav">        
-        <div class=" personal__logo">Aaqeeb Hussain</div>
-    <ul class="nav__link--list">
-      <li class="nav__link">
-        <a href="#languages" class="nav__link--anchor link__hover-effect link__hover-effect--black">Languages</a>
-      </li>
-      <li class="nav__link">
-        <a href="#projects" class="nav__link--anchor link__hover-effect link__hover-effect--black">Projects</a>
-      </li>
-      <li class="nav__link">
-        <a class="nav__link--anchor nav__link--anchor-primary" onclick="toggleModal()">Contact</a>
-      </li>
-      <li>
-        <a>
-          <i class="fa-solid fa-circle-half-stroke dark-mode" onclick="toggleContrast()"></i>
-        </a>
-      </li>
-    </ul>
+    <nav id="nav">
+      <div><img src="./assets/2.svg" class="personal__logo" id="personal__logo" alt=""></div>
+      <ul class="nav__link--list">
+        <li class="nav__link">
+          <a href="#languages" class="nav__link--anchor link__hover-effect link__hover-effect--black">Languages</a>
+        </li>
+        <li class="nav__link">
+          <a href="#projects" class="nav__link--anchor link__hover-effect link__hover-effect--black">Projects</a>
+        </li>
+        <li class="nav__link">
+          <a class="nav__link--anchor nav__link--anchor-primary" onclick="toggleModal()">Contact</a>
+        </li>
+        <li>
+          <a>
+            <i class="fa-solid fa-circle-half-stroke dark-mode contrastToggle" onclick="toggleContrast()"></i>
+          </a>
+        </li>
+      </ul>
     </nav>
     <div class="flex flex-1">
       <div class="about-me__info row">
@@ -311,7 +311,7 @@
     <div class="row footer__row">
       <a href="#" class="footer_anchor">
         <figure class="footer__logo">
-          <img src="./assets/Logo.JPG" class="footer__logo--img" alt="" />
+          <img src="./assets/2.svg" class="footer__logo--img" alt="" />
         </figure>
         <span class="footer__logo--popper">Top<i class="click fas fa-arrow-up"></i></span>
       </a>
@@ -332,15 +332,14 @@
 
   <script src="https://kit.fontawesome.com/c56b8b2b8b.js" crossorigin="anonymous"></script>
   <script src="./index.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
   </script>
+  <script  type="module" src="./server.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
   <script>
-    const config = {
-      type: 'carousel',
-      perView: 3,
-    }
-    new Glide('.glide', config).mount()
+    new Glide('.glide', getGlideConfig()).mount()
+
   </script>
 
 </body>

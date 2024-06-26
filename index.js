@@ -1,15 +1,20 @@
 let isModalOpen = false;
 let contrastToggle = false;
 const scaleFactor = 1 / 20;
+const headerLogo = document.getElementById("personal__logo")
 
 function toggleContrast() {
   contrastToggle = !contrastToggle;
   if (contrastToggle) {
-    document.body.classList += " dark-mode";
+    document.body.classList += "dark-mode"; // Use add() for adding classes
+    headerLogo.src="./assets/2.svg";
   } else {
     document.body.classList.remove("dark-mode");
+    headerLogo.src = "./assets/1.svg";
+    console.log(headerLogo.src);
   }
 }
+toggleContrast();
 
 function contact(event) {
   event.preventDefault();
@@ -44,3 +49,24 @@ function toggleModal() {
   document.body.classList += " modal__open disable-scroll";
   document.body.scrollTop = document.documentElement.scrollTop = 0;
 }
+
+function getGlideConfig() {
+      const screenWidth = window.innerWidth;
+      if (screenWidth < 768) { // Small screens
+        return {
+          type: 'carousel',
+          perView: 1,
+        };
+      } else if (screenWidth >= 768 && screenWidth < 1024) { // Medium screens
+        return {
+          type: 'carousel',
+          perView: 2,
+        };
+      } else { // Large screens and above
+        return {
+          type: 'carousel',
+          perView: 3,
+        };
+      }
+    }
+    
