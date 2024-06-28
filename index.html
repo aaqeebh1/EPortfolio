@@ -16,26 +16,26 @@
 </head>
 
 <body>
-  <section id="about">
-    <nav id="nav">
-      <div><img src="./assets/2.svg" class="personal__logo" id="personal__logo" alt=""></div>
-      <ul class="nav__link--list">
-        <li class="nav__link">
-          <a href="#languages" class="nav__link--anchor link__hover-effect link__hover-effect--black">Languages</a>
-        </li>
-        <li class="nav__link">
-          <a href="#projects" class="nav__link--anchor link__hover-effect link__hover-effect--black">Projects</a>
-        </li>
-        <li class="nav__link">
-          <a class="nav__link--anchor nav__link--anchor-primary" onclick="toggleModal()">Contact</a>
-        </li>
-        <li>
-          <a>
-            <i class="fa-solid fa-circle-half-stroke dark-mode contrastToggle" onclick="toggleContrast()"></i>
-          </a>
-        </li>
-      </ul>
-    </nav>
+  <nav id="nav">
+    <div><img src="./assets/2.svg" class="personal__logo" id="personal__logo" alt=""></div>
+    <ul class="nav__link--list">
+      <li class="nav__link">
+        <a href="#languages" class="nav__link--anchor link__hover-effect link__hover-effect--black">Languages</a>
+      </li>
+      <li class="nav__link">
+        <a href="#projects" class="nav__link--anchor link__hover-effect link__hover-effect--black">Projects</a>
+      </li>
+      <li class="nav__link">
+        <a class="nav__link--anchor nav__link--anchor-primary" onclick="toggleModal()">Contact</a>
+      </li>
+      <li>
+        <a>
+          <i class="fa-solid fa-circle-half-stroke dark-mode contrastToggle" onclick="toggleContrast()"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <section class="about">
     <div class="flex flex-1">
       <div class="about-me__info row">
         <div class="about-me__info--container">
@@ -115,6 +115,14 @@
             <img class="modal__language--img" src="./assets/react.png" alt="" />
             <span class="modal__language--name">React</span>
           </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="./assets/Nextjs-logo.svg.png" alt="" />
+            <span class="modal__language--name">Next.js</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="./assets/590px-Node.js_logo.svg.png" alt="" />
+            <span class="modal__language--name">Node.js</span>
+          </figure>
         </div>
       </div>
       <div class="modal__half modal__contact">
@@ -181,6 +189,18 @@
             </figure>
             <span class="language__name">React</span>
           </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img src="./assets/Nextjs-logo.svg.png" alt="" class="language__img" />
+            </figure>
+            <span class="language__name">Next.js</span>
+          </div>
+          <div class="language">
+            <figure class="language__img--wrapper">
+              <img src="./assets/590px-Node.js_logo.svg.png" alt="" class="language__img" />
+            </figure>
+            <span class="language__name">Node.js</span>
+          </div>
         </div>
       </div>
     </div>
@@ -194,6 +214,32 @@
         <div class="glide">
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
+              <li class="project glide__slide">
+                <div class="project__wrapper">
+                  <img src="./assets/WMCACommDashboard.png" alt="WMCA project" class="project__img" />
+                  <div class="project__description">
+                    <h3 class="project__description--title">WMCA Communication Dashboard</h3>
+                    <h4 class="project__description--sub-title">
+                      ReactJS, CSS, Vite, Husky, Snyk and Github
+                    </h4>
+                    <p class="project__description--para">
+                      The communication dashboard was made using ReactJS with Vite for its superior performance,
+                      offering faster builds, we
+                      managed version control with GitHub, employed Husky and Snyk for automated tasks and security.
+                    </p>
+                    <div class="project__description--links">
+                      <a href="https://github.com/aaqeebh1/bc16-final-projects-team-ctrl-alt-elite" target="_blank"
+                        class="project__description--link">
+                        <i class="click fa-brands fa-github"></i>
+                      </a>
+                      <a href="https://bc16-final-projects-team-ctrl-alt-elite.vercel.app/" target="_blank"
+                        class="project__description--link">
+                        <i class="click fa-solid fa-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
               <li class="project glide__slide">
                 <div class="project__wrapper">
                   <img src="./assets/AnimeWorld.JPG" alt="My project image Anime World" class="project__img" />
@@ -216,6 +262,32 @@
                         <i class="click fa-brands fa-github"></i>
                       </a>
                       <a href="https://animeworld-fb434.web.app/" target="_blank" class="project__description--link">
+                        <i class="click fa-solid fa-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="project glide__slide">
+                <div class="project__wrapper">
+                  <img src="./assets/NFT Market place.png" alt="My project image" class="project__img" />
+                  <div class="project__description">
+                    <h3 class="project__description--title">Nft Market Place</h3>
+                    <h4 class="project__description--sub-title">
+                      CSS, ReactJS, and REST APIs.
+                    </h4>
+                    <p class="project__description--para">
+                      An NFT marketplace built with HTML, CSS, JavaScript, ReactJS, and REST APIs. The project features
+                      a responsive design
+                      and simulates a real-world environment by utilizing Git and GitHub for pull requests.
+                    </p>
+                    <div class="project__description--links">
+                      <a href="https://github.com/aaqeebh1/aaqeeb-internship" target="_blank"
+                        class="project__description--link">
+                        <i class="click fa-brands fa-github"></i>
+                      </a>
+                      <a href="https://intenrship-nft.firebaseapp.com/" target="_blank"
+                        class="project__description--link">
                         <i class="click fa-solid fa-link"></i>
                       </a>
                     </div>
@@ -332,16 +404,14 @@
 
   <script src="https://kit.fontawesome.com/c56b8b2b8b.js" crossorigin="anonymous"></script>
   <script src="./index.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
   </script>
-  <script  type="module" src="./server.js"></script>
+  </script>
+  <script type="module" src="./server.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
   <script>
     new Glide('.glide', getGlideConfig()).mount()
-
   </script>
-
 </body>
 
 </html>
