@@ -917,7 +917,6 @@ nav,
   transition: opacity 600ms 800ms, visibility 600ms 800ms;
 }
 
-.modal__open nav,
 .modal__open .flex,
 .modal__open #languages,
 .modal__open #projects,
@@ -928,6 +927,13 @@ nav,
   transition: opacity 400ms, visibility 400ms;
 }
 
+.modal__open .nav__link--list{
+  opacity: 0;
+  visibility: visible;
+  background-color: #000;
+  transition: opacity 400ms, visibility 400ms;
+
+}
 .modal__open #about {
   height: 100vh;
 }
